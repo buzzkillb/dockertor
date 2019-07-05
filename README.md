@@ -1,7 +1,7 @@
 # dockertor  
 run  
 ```
-docker run --name tor --net host -v /etc/tor/torrc:/etc/tor/torrc buzzkillb/tor:latest
+docker run --name tor --net host -v /etc/tor/torrc:/etc/tor/torrc buzzkillb/tor:alpine
 ```
 add hidden services  
 ```
@@ -23,4 +23,5 @@ restart tor
 ```
 Be careful running this as people say to use iptables to route this and not --net host, if being behind only tor matters.  
 
-buzzkillb/tor:latest - debian based
+buzzkillb/tor:latest - debian based  
+buzzkillb/tor:alpine - alpine based
