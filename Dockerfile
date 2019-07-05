@@ -1,4 +1,4 @@
-ROM debian:stretch-slim
+FROM debian:stretch-slim
 
 LABEL author="buzzkillb"
 
