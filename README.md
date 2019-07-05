@@ -1,7 +1,7 @@
 # dockertor  
 run  
 ```
-docker run --name tor --net host -v /etc/tor/torrc:/etc/tor/torrc buzzkillb/tor
+docker run --name tor --net host -v /etc/tor/torrc:/etc/tor/torrc buzzkillb/tor:latest
 ```
 add hidden services  
 ```
@@ -21,4 +21,6 @@ restart tor container
 ```
 restart tor
 ```
-Be careful running this as people say to use iptables to route this and not --net host, if being behind only tor matters.
+Be careful running this as people say to use iptables to route this and not --net host, if being behind only tor matters.  
+
+buzzkillb/tor:latest - debian based
